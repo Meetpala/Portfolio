@@ -642,7 +642,6 @@ footer {
   height: 40px;
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(4px);
   border-radius: 50%;
   pointer-events: none;
   transform: translate(-50%, -50%);
