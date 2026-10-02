@@ -1,7 +1,7 @@
 /* =========================================
    BASE & RESET
 ========================================= */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
 
 html {
   scroll-behavior: smooth;
@@ -11,14 +11,38 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Inter', Arial, sans-serif;
+  font-family: 'Outfit', Arial, sans-serif;
 }
 
 body {
-  background: #0f172a;
-  color: white;
+  background: #070709;
+  color: #f8fafc;
   cursor: none;
   overflow-x: hidden;
+  position: relative;
+}
+
+/* Glowing Background Orbs */
+body::before, body::after {
+  content: '';
+  position: fixed;
+  width: 50vw;
+  height: 50vw;
+  border-radius: 50%;
+  filter: blur(150px);
+  z-index: -1;
+  opacity: 0.15;
+  pointer-events: none;
+}
+body::before {
+  background: #38bdf8;
+  top: -20vh;
+  left: -20vw;
+}
+body::after {
+  background: #818cf8;
+  bottom: -20vh;
+  right: -20vw;
 }
 
 /* =========================================
@@ -314,11 +338,14 @@ section h2::after {
 }
 
 .experience-card {
-  background: #1e293b;
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   padding: 30px;
-  border-radius: 14px;
-  border: 1px solid rgba(56, 189, 248, 0.1);
-  transition: all 0.35s ease;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   position: relative;
   overflow: hidden;
 }
@@ -399,15 +426,18 @@ section h2::after {
 }
 
 .project-card {
-  background: #1e293b;
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   padding: 28px 22px;
   width: 270px;
-  border-radius: 14px;
-  transition: all 0.35s ease;
+  border-radius: 20px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  border: 1px solid rgba(56, 189, 248, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   text-align: left;
 }
 
@@ -595,9 +625,10 @@ footer {
 ========================================= */
 .cursor {
   position: fixed;
-  width: 8px;
-  height: 8px;
-  background: #38bdf8;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  mix-blend-mode: difference;
   border-radius: 50%;
   pointer-events: none;
   transform: translate(-50%, -50%);
@@ -607,13 +638,15 @@ footer {
 
 .cursor-follower {
   position: fixed;
-  width: 35px;
-  height: 35px;
-  border: 2px solid rgba(56, 189, 248, 0.7);
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4px);
   border-radius: 50%;
   pointer-events: none;
   transform: translate(-50%, -50%);
-  transition: transform 0.25s ease;
+  transition: transform 0.25s ease, width 0.25s ease, height 0.25s ease, background 0.25s ease;
   z-index: 9998;
 }
 

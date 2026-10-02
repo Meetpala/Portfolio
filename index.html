@@ -1,277 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta charset="UTF-8">
-<meta name="description" content="Meet Pala Soni – Software Developer & AI/ML Enthusiast. View projects, skills, and get in touch.">
-<title>Meet | Portfolio</title>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="description"
+    content="Meet Pala Soni – Software Developer & AI/ML Enthusiast. View projects, skills, and get in touch.">
+  <title>Meet | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
-<header>
-<nav>
-  <h2 class="logo">Meet Pala Soni</h2>
+  <header>
+    <nav>
+      <h2 class="logo">Meet Pala Soni</h2>
 
-  <div class="menu-toggle" id="menu-toggle">
-    <i class="fa-solid fa-bars"></i>
-  </div>
-
-  <ul class="nav-links" id="nav-links">
-    <li><a href="#home" class="nav-link">Home</a></li>
-    <li><a href="#about" class="nav-link">About</a></li>
-    <li><a href="#skills" class="nav-link">Skills</a></li>
-    <li><a href="#experience" class="nav-link">Experience</a></li>
-    <li><a href="#projects" class="nav-link">Projects</a></li>
-    <li><a href="#contact" class="nav-link">Contact</a></li>
-  </ul>
-
-  <button id="theme-toggle" aria-label="Toggle dark/light mode">🌙</button>
-
-</nav>
-</header>
-
-<section id="home" class="hero">
-
-  <h1>Hello, I'm <span id="typed-name"></span></h1>
-  <p class="hero-subtitle"><span id="typed-role"></span></p>
-  <br><br>
-  <div class="hero-btns">
-    <button onclick="scrollToSection('projects')" id="btn-projects">
-      <i class="fa-solid fa-rocket"></i> View Projects
-    </button>
-    <button onclick="window.open('https://drive.google.com/file/d/127CAAZSJ8n3rc0Tf6fcBoMuVN13ofT9D/view?usp=sharing', '_blank')" id="btn-resume">
-      <i class="fa-solid fa-file-lines"></i> View Resume
-    </button>
-  </div>
-
-</section>
-
-<section id="about" class="about reveal">
-
-  <h2>About Me</h2>
-
-  <p class="about-text">
-    I am a passionate developer interested in building Web applications,
-    AI solutions and solving real world problems with technology.
-  </p>
-  <br><br>
-
-  <div class="hero-image">
-    <img src="./meet_pala_stylish.jpeg" alt="Meet Pala Soni Photo">
-  </div>
-
-</section>
-
-<section id="skills" class="reveal">
-
-  <h2>Skills</h2>
-
-  <div class="skills-container">
-    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" class="skill" title="Learn HTML">
-      <i class="fa-brands fa-html5"></i> HTML
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" class="skill" title="Learn CSS">
-      <i class="fa-brands fa-css3-alt"></i> CSS
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" class="skill" title="Learn JavaScript">
-      <i class="fa-brands fa-js"></i> JavaScript
-    </a>
-    <a href="https://www.python.org/" target="_blank" class="skill" title="Python Official Site">
-      <i class="fa-brands fa-python"></i> Python
-    </a>
-    <a href="https://www.java.com/" target="_blank" class="skill" title="Java Official Site">
-      <i class="fa-brands fa-java"></i> Java
-    </a>
-    <a href="https://en.wikipedia.org/wiki/Artificial_intelligence" target="_blank" class="skill" title="AI / ML">
-      <i class="fa-solid fa-robot"></i> AI / ML
-    </a>
-    <a href="https://en.wikipedia.org/wiki/DevOps" target="_blank" class="skill" title="DevOps">
-      <i class="fa-solid fa-infinity"></i> DevOps
-    </a>
-    <a href="https://www.docker.com/" target="_blank" class="skill" title="Docker">
-      <i class="fa-brands fa-docker"></i> Docker
-    </a>
-    <a href="https://aws.amazon.com/" target="_blank" class="skill" title="Amazon Web Services (AWS)">
-      <i class="fa-brands fa-aws"></i> AWS
-    </a>
-    <a href="https://kafka.apache.org/" target="_blank" class="skill" title="Apache Kafka">
-      <i class="fa-solid fa-database"></i> Kafka
-    </a>
-    <a href="https://kubernetes.io/" target="_blank" class="skill" title="Kubernetes">
-      <i class="fa-solid fa-server"></i> Kubernetes
-    </a>
-    <a href="https://www.jenkins.io/" target="_blank" class="skill" title="Jenkins">
-      <i class="fa-brands fa-jenkins"></i> Jenkins
-    </a>
-    <a href="https://en.wikipedia.org/wiki/Data_analysis" target="_blank" class="skill" title="Data Analytics">
-      <i class="fa-solid fa-chart-pie"></i> Data Analytics
-    </a>
-    <a href="https://azure.microsoft.com/" target="_blank" class="skill" title="Azure AI Foundry">
-      <i class="fa-brands fa-microsoft"></i> Azure AI Foundry
-    </a>
-    <a href="https://en.wikipedia.org/wiki/Intelligent_agent" target="_blank" class="skill" title="Agentic AI">
-      <i class="fa-solid fa-brain"></i> Agentic AI
-    </a>
-    <a href="https://en.wikipedia.org/wiki/Extract,_transform,_load" target="_blank" class="skill" title="ETL">
-      <i class="fa-solid fa-filter"></i> ETL
-    </a>
-    <a href="#" class="skill" title="Guardrails Expert">
-      <i class="fa-solid fa-shield-halved"></i> Guardrails Expert
-    </a>
-  </div>
-  <br><br>
-  <h2>Core Concepts</h2>
-
-  <div class="concept-container">
-    <a href="https://en.wikipedia.org/wiki/Object-oriented_programming" target="_blank" class="concept" title="Object-Oriented Programming">
-      <i class="fa-solid fa-cubes"></i> OOP
-    </a>
-    <a href="https://en.wikipedia.org/wiki/Exception_handling" target="_blank" class="concept" title="Error Handling">
-      <i class="fa-solid fa-shield-halved"></i> Error Handling
-    </a>
-  </div>
-
-</section>
-
-<section id="experience" class="reveal">
-
-  <h2>Experience</h2>
-
-  <div class="experience-container">
-    
-    <div class="experience-card reveal-card">
-      <div class="exp-header">
-        <h3 class="exp-title">AI/ML Engineer</h3>
-        <span class="exp-date">May 2026 - Present (6 months)</span>
+      <div class="menu-toggle" id="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
       </div>
-      <h4 class="exp-company"><i class="fa-solid fa-building"></i> Stridely Solutions <i class="fa-solid fa-location-dot" style="margin-left: 8px;"></i> Ahmedabad</h4>
-      <p class="exp-desc">
-        Versatile Software, Agentic AI &amp; DevOps Engineer who is passionate about both writing great software and building the infrastructure that delivers it. Bridging the gap between development and operations. Develop features but also own the lifecycle of your code designing, building, and maintaining the CI/CD pipelines that ensure smooth, reliable, and automated deployments.
-      </p>
-    </div>
 
-    <div class="experience-card reveal-card">
-      <div class="exp-header">
-        <h3 class="exp-title">Junior Python Developer</h3>
-        <span class="exp-date">Dec 2025 - Apr 2026 (5 months)</span>
-      </div>
-      <h4 class="exp-company"><i class="fa-solid fa-building"></i> QSpiders - Software Testing Training Institute <i class="fa-solid fa-location-dot" style="margin-left: 8px;"></i> Ahmedabad</h4>
-      <ul class="exp-list">
-        <li>Assisted in Application development, testing and backend logic.</li>
-        <li>Collaborated in a team and used Git for version control.</li>
-        <li>Enhanced Technical Skills and Boosting productivity.</li>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
+
+      <button id="theme-toggle" aria-label="Toggle dark/light mode">🌙</button>
+
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+
+    <h1>Hello, I'm <span id="typed-name"></span></h1>
+    <p class="hero-subtitle"><span id="typed-role"></span></p>
+    <br><br>
+    <div class="hero-btns">
+      <button onclick="scrollToSection('projects')" id="btn-projects">
+        <i class="fa-solid fa-rocket"></i> View Projects
+      </button>
+      <button
+        onclick="window.open('https://drive.google.com/file/d/127CAAZSJ8n3rc0Tf6fcBoMuVN13ofT9D/view?usp=sharing', '_blank')"
+        id="btn-resume">
+        <i class="fa-solid fa-file-lines"></i> View Resume
+      </button>
     </div>
 
-  </div>
+  </section>
 
-</section>
+  <section id="about" class="about reveal">
 
-<section id="projects" class="reveal">
+    <h2>About Me</h2>
 
-  <h2>Projects</h2>
+    <p class="about-text">
+      I am a passionate developer interested in building Web applications,
+      AI solutions and solving real world problems with technology.
+    </p>
+    <br><br>
 
-  <div class="projects-container">
+    <div class="hero-image">
+      <img src="./meet_pala_stylish.jpeg" alt="Meet Pala Soni Photo">
+    </div>
 
-    <div class="project-card reveal-card" onclick="window.open('https://github.com/Meetpala/banking-system', '_blank')" role="button" tabindex="0" aria-label="Banking System Project">
-      <div class="card-icon"><i class="fa-solid fa-building-columns"></i></div>
-      <h3>Banking System</h3>
-      <p>Developed Working Model of Savings &amp; Current Account</p>
-      <div class="card-links">
-        <a href="https://github.com/Meetpala/banking-system" target="_blank" onclick="event.stopPropagation()" class="card-btn">
-          <i class="fa-brands fa-github"></i> GitHub
-        </a>
+  </section>
+
+  <section id="skills" class="reveal">
+
+    <h2>Skills</h2>
+
+    <div class="skills-container">
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" class="skill" title="Learn HTML">
+        <i class="fa-brands fa-html5"></i> HTML
+      </a>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" class="skill" title="Learn CSS">
+        <i class="fa-brands fa-css3-alt"></i> CSS
+      </a>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" class="skill"
+        title="Learn JavaScript">
+        <i class="fa-brands fa-js"></i> JavaScript
+      </a>
+      <a href="https://www.python.org/" target="_blank" class="skill" title="Python Official Site">
+        <i class="fa-brands fa-python"></i> Python
+      </a>
+      <a href="https://www.java.com/" target="_blank" class="skill" title="Java Official Site">
+        <i class="fa-brands fa-java"></i> Java
+      </a>
+      <a href="https://en.wikipedia.org/wiki/Artificial_intelligence" target="_blank" class="skill" title="AI / ML">
+        <i class="fa-solid fa-robot"></i> AI / ML
+      </a>
+      <a href="https://en.wikipedia.org/wiki/DevOps" target="_blank" class="skill" title="DevOps">
+        <i class="fa-solid fa-infinity"></i> DevOps
+      </a>
+      <a href="https://www.docker.com/" target="_blank" class="skill" title="Docker">
+        <i class="fa-brands fa-docker"></i> Docker
+      </a>
+      <a href="https://aws.amazon.com/" target="_blank" class="skill" title="Amazon Web Services (AWS)">
+        <i class="fa-brands fa-aws"></i> AWS
+      </a>
+      <a href="https://kafka.apache.org/" target="_blank" class="skill" title="Apache Kafka">
+        <i class="fa-solid fa-database"></i> Kafka
+      </a>
+      <a href="https://kubernetes.io/" target="_blank" class="skill" title="Kubernetes">
+        <i class="fa-solid fa-server"></i> Kubernetes
+      </a>
+      <a href="https://www.jenkins.io/" target="_blank" class="skill" title="Jenkins">
+        <i class="fa-brands fa-jenkins"></i> Jenkins
+      </a>
+      <a href="https://en.wikipedia.org/wiki/Data_analysis" target="_blank" class="skill" title="Data Analytics">
+        <i class="fa-solid fa-chart-pie"></i> Data Analytics
+      </a>
+      <a href="https://azure.microsoft.com/" target="_blank" class="skill" title="Azure AI Foundry">
+        <i class="fa-brands fa-microsoft"></i> Azure AI Foundry
+      </a>
+      <a href="https://en.wikipedia.org/wiki/Intelligent_agent" target="_blank" class="skill" title="Agentic AI">
+        <i class="fa-solid fa-brain"></i> Agentic AI
+      </a>
+      <a href="https://en.wikipedia.org/wiki/Extract,_transform,_load" target="_blank" class="skill" title="ETL">
+        <i class="fa-solid fa-filter"></i> ETL
+      </a>
+      <a href="#" class="skill" title="Guardrails Expert">
+        <i class="fa-solid fa-shield-halved"></i> Guardrails Expert
+      </a>
+    </div>
+
+
+  </section>
+
+  <section id="experience" class="reveal">
+
+    <h2>Experience</h2>
+
+    <div class="experience-container">
+
+      <div class="experience-card reveal-card">
+        <div class="exp-header">
+          <h3 class="exp-title">AI/ML Engineer</h3>
+          <span class="exp-date">May 2026 - Present (6 months)</span>
+        </div>
+        <h4 class="exp-company"><i class="fa-solid fa-building"></i> Stridely Solutions <i
+            class="fa-solid fa-location-dot" style="margin-left: 8px;"></i> Ahmedabad</h4>
+        <p class="exp-desc">
+          Versatile Software, Agentic AI &amp; DevOps Engineer who is passionate about both writing great software and
+          building the infrastructure that delivers it. Bridging the gap between development and operations. Develop
+          features but also own the lifecycle of your code designing, building, and maintaining the CI/CD pipelines that
+          ensure smooth, reliable, and automated deployments.
+        </p>
       </div>
-    </div>
 
-    <div class="project-card reveal-card" onclick="window.open('https://github.com/Meetpala/Portfolio', '_blank')" role="button" tabindex="0" aria-label="Portfolio Website Project">
-      <div class="card-icon"><i class="fa-solid fa-globe"></i></div>
-      <h3>Portfolio Website</h3>
-      <p>Responsive personal portfolio website</p>
-      <div class="card-links">
-        <a href="https://github.com/Meetpala/Portfolio" target="_blank" onclick="event.stopPropagation()" class="card-btn">
-          <i class="fa-brands fa-github"></i> GitHub
-        </a>
-        <a href="#home" onclick="event.stopPropagation()" class="card-btn card-btn-live">
-          <i class="fa-solid fa-arrow-up-right-from-square"></i> Live
-        </a>
+      <div class="experience-card reveal-card">
+        <div class="exp-header">
+          <h3 class="exp-title">Junior Python Developer</h3>
+          <span class="exp-date">Dec 2025 - Apr 2026 (5 months)</span>
+        </div>
+        <h4 class="exp-company"><i class="fa-solid fa-building"></i> QSpiders - Software Testing Training Institute <i
+            class="fa-solid fa-location-dot" style="margin-left: 8px;"></i> Ahmedabad</h4>
+        <ul class="exp-list">
+          <li>Assisted in Application development, testing and backend logic.</li>
+          <li>Collaborated in a team and used Git for version control.</li>
+          <li>Enhanced Technical Skills and Boosting productivity.</li>
+        </ul>
       </div>
+
     </div>
 
-    <div class="project-card reveal-card" onclick="window.open('https://github.com/Meetpala/stock-market-dashboard', '_blank')" role="button" tabindex="0" aria-label="Stock Market Dashboard Project">
-      <div class="card-icon"><i class="fa-solid fa-chart-line"></i></div>
-      <h3>Stock Market Dashboard</h3>
-      <p>Visualization of stock data using Python</p>
-      <div class="card-links">
-        <a href="https://github.com/Meetpala/stock-market-dashboard" target="_blank" onclick="event.stopPropagation()" class="card-btn">
-          <i class="fa-brands fa-github"></i> GitHub
-        </a>
+  </section>
+
+  <section id="projects" class="reveal">
+
+    <h2>Projects</h2>
+
+    <div class="projects-container">
+
+      <div class="project-card reveal-card"
+        onclick="window.open('https://github.com/Meetpala/banking-system', '_blank')" role="button" tabindex="0"
+        aria-label="Banking System Project">
+        <div class="card-icon"><i class="fa-solid fa-building-columns"></i></div>
+        <h3>Banking System</h3>
+        <p>Developed Working Model of Savings &amp; Current Account</p>
+        <div class="card-links">
+          <a href="https://github.com/Meetpala/banking-system" target="_blank" onclick="event.stopPropagation()"
+            class="card-btn">
+            <i class="fa-brands fa-github"></i> GitHub
+          </a>
+        </div>
       </div>
+
+      <div class="project-card reveal-card" onclick="window.open('https://github.com/Meetpala/Portfolio', '_blank')"
+        role="button" tabindex="0" aria-label="Portfolio Website Project">
+        <div class="card-icon"><i class="fa-solid fa-globe"></i></div>
+        <h3>Portfolio Website</h3>
+        <p>Responsive personal portfolio website</p>
+        <div class="card-links">
+          <a href="https://github.com/Meetpala/Portfolio" target="_blank" onclick="event.stopPropagation()"
+            class="card-btn">
+            <i class="fa-brands fa-github"></i> GitHub
+          </a>
+          <a href="#home" onclick="event.stopPropagation()" class="card-btn card-btn-live">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+          </a>
+        </div>
+      </div>
+
+      <div class="project-card reveal-card"
+        onclick="window.open('https://github.com/Meetpala/stock-market-dashboard', '_blank')" role="button" tabindex="0"
+        aria-label="Stock Market Dashboard Project">
+        <div class="card-icon"><i class="fa-solid fa-chart-line"></i></div>
+        <h3>Stock Market Dashboard</h3>
+        <p>Visualization of stock data using Python</p>
+        <div class="card-links">
+          <a href="https://github.com/Meetpala/stock-market-dashboard" target="_blank" onclick="event.stopPropagation()"
+            class="card-btn">
+            <i class="fa-brands fa-github"></i> GitHub
+          </a>
+        </div>
+      </div>
+
     </div>
 
-  </div>
+  </section>
 
-</section>
+  <section id="contact" class="reveal">
 
-<section id="contact" class="reveal">
+    <h2>Contact Me</h2>
+    <br>
 
-  <h2>Contact Me</h2>
-  <br>
+    <div class="contact-grid">
+      <a href="tel:+917383192117" class="contact-item" aria-label="Call Meet">
+        <i class="fa-solid fa-phone"></i>
+        <span>+91 7383192117</span>
+      </a>
+      <a href="mailto:itsmeetu09@gmail.com" class="contact-item" aria-label="Email Meet">
+        <i class="fa-solid fa-envelope"></i>
+        <span>itsmeetu09@gmail.com</span>
+      </a>
+      <a href="https://linkedin.com/in/meet-pala/" target="_blank" class="contact-item" aria-label="LinkedIn Profile">
+        <i class="fa-brands fa-linkedin"></i>
+        <span>LinkedIn</span>
+      </a>
+    </div>
 
-  <div class="contact-grid">
-    <a href="tel:+917383192117" class="contact-item" aria-label="Call Meet">
-      <i class="fa-solid fa-phone"></i>
-      <span>+91 7383192117</span>
-    </a>
-    <a href="mailto:meetpalasoni@gmail.com" class="contact-item" aria-label="Email Meet">
-      <i class="fa-solid fa-envelope"></i>
-      <span>meetpalasoni@gmail.com</span>
-    </a>
-    <a href="https://linkedin.com/in/meet-pala/" target="_blank" class="contact-item" aria-label="LinkedIn Profile">
-      <i class="fa-brands fa-linkedin"></i>
-      <span>LinkedIn</span>
-    </a>
-  </div>
+    <br>
+    <div class="social-icons">
 
-  <br>
-  <div class="social-icons">
+      <a href="https://www.instagram.com/pala_meet_/" target="_blank" aria-label="Instagram" title="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
 
-    <a href="https://www.instagram.com/pala_meet_/" target="_blank" aria-label="Instagram" title="Instagram">
-      <i class="fa-brands fa-instagram"></i>
-    </a>
+      <a href="https://www.facebook.com/meet.pala.73/" target="_blank" aria-label="Facebook" title="Facebook">
+        <i class="fa-brands fa-facebook"></i>
+      </a>
 
-    <a href="https://www.facebook.com/meet.pala.73/" target="_blank" aria-label="Facebook" title="Facebook">
-      <i class="fa-brands fa-facebook"></i>
-    </a>
+      <a href="https://github.com/Meetpala" target="_blank" aria-label="GitHub" title="GitHub">
+        <i class="fa-brands fa-github"></i>
+      </a>
 
-    <a href="https://github.com/Meetpala" target="_blank" aria-label="GitHub" title="GitHub">
-      <i class="fa-brands fa-github"></i>
-    </a>
+      <a href="https://linkedin.com/in/meet-pala/" target="_blank" aria-label="LinkedIn" title="LinkedIn">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
 
-    <a href="https://linkedin.com/in/meet-pala/" target="_blank" aria-label="LinkedIn" title="LinkedIn">
-      <i class="fa-brands fa-linkedin"></i>
-    </a>
+    </div>
 
-  </div>
+  </section>
 
-</section>
+  <footer>
+    <p>© 2026 Meet Pala Soni | Crafted with <span style="color:#ef4444">❤</span></p>
+  </footer>
 
-<footer>
-  <p>© 2026 Meet Pala Soni | Crafted with <span style="color:#ef4444">❤</span></p>
-</footer>
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
 
-<div class="cursor"></div>
-<div class="cursor-follower"></div>
+  <!-- Back to top button -->
+  <button id="back-to-top" aria-label="Back to top" title="Back to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
 
-<!-- Back to top button -->
-<button id="back-to-top" aria-label="Back to top" title="Back to top">
-  <i class="fa-solid fa-chevron-up"></i>
-</button>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 
 </body>
+
 </html>

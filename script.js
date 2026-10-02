@@ -79,13 +79,16 @@ function animateCursor() {
 animateCursor();
 
 // Scale follower on interactive elements
-document.querySelectorAll('a, button, .project-card, .experience-card, .skill, .concept, .contact-item').forEach(el => {
+document.querySelectorAll('a, button, .project-card, .experience-card, .skill, .contact-item').forEach(el => {
   el.addEventListener('mouseenter', () => {
-    follower.style.transform = 'translate(-50%, -50%) scale(2)';
-    follower.style.borderColor = '#38bdf8';
+    follower.style.transform = 'translate(-50%, -50%) scale(1.5)';
+    follower.style.background = 'rgba(255, 255, 255, 0.2)';
+    follower.style.borderColor = 'rgba(255, 255, 255, 0.5)';
   });
   el.addEventListener('mouseleave', () => {
     follower.style.transform = 'translate(-50%, -50%) scale(1)';
+    follower.style.background = 'rgba(255, 255, 255, 0.1)';
+    follower.style.borderColor = 'rgba(255, 255, 255, 0.2)';
   });
 });
 
