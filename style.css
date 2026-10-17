@@ -37,28 +37,17 @@ body {
   position: relative;
 }
 
-/* Glowing Background Orbs */
-body::before, body::after {
-  content: '';
+/* Galaxy Canvas */
+#galaxy-canvas {
   position: fixed;
-  width: 50vw;
-  height: 50vw;
-  border-radius: 50%;
-  filter: blur(150px);
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
   z-index: -1;
-  opacity: 0.15;
   pointer-events: none;
 }
-body::before {
-  background: #38bdf8;
-  top: -20vh;
-  left: -20vw;
-}
-body::after {
-  background: #818cf8;
-  bottom: -20vh;
-  right: -20vw;
-}
+
 
 /* =========================================
    HEADER & NAV
